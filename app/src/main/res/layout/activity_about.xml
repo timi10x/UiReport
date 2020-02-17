@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.about">
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:gravity="center"
+        android:fontFamily="@font/baloo"
+        android:layout_height="wrap_content"
+        android:text="With a simple tap, you can comfortably report crime incidents and missing items within the University of Ibadan and get instant reports"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="#0066F6"/>
+
+    <TextView
+        android:layout_below="@id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center"
+        android:fontFamily="@font/baloo"
+        android:text="Created by Toluwalemi Oluwadare and used by students of University of Ibadan"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="#0066F6"/>
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".UI.SignUp">
+
+    <LinearLayout
+        android:id="@+id/Container1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/badge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/baloo"
+            android:text="uiReport"
+            android:textColor="#000"
+            android:textSize="@dimen/_16sdp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Container1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:fontFamily="@font/baloo"
+        android:text="Create new \naccount"
+        android:textColor="#0066F6"
+        android:textSize="@dimen/_17sdp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/containerUsername"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_below="@id/create_account"
+        android:layout_marginLeft="@dimen/_20sdp"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@drawable/ic_error_black_24dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:hint="username" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Containerphone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_below="@id/containerUsername"
+        android:layout_marginLeft="@dimen/_20sdp"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@drawable/ic_error_black_24dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:hint="phone number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Containeremail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_below="@id/Containerphone"
+        android:layout_marginLeft="@dimen/_20sdp"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@drawable/ic_error_black_24dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:hint="email" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Containeraddress"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_below="@id/Containeremail"
+        android:layout_marginLeft="@dimen/_20sdp"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@drawable/ic_error_black_24dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/address_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:hint="address" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Containerpasswords"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_below="@id/Containeraddress"
+        android:layout_marginLeft="@dimen/_20sdp"
+        app:boxBackgroundColor="#fff"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@drawable/ic_error_black_24dp"
+        app:passwordToggleEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:hint="password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signUp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@id/Containerpasswords"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:backgroundTint="#0066F6"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Sign up"
+        android:textColor="#fff"
+        android:textSize="@dimen/_15sdp"
+        app:cornerRadius="@dimen/_16sdp" />
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:fontFamily="@font/baloo"
+        android:text="Already have an account? Sign In"
+        android:textAlignment="center"
+        android:textColor="#000" />
+
+</RelativeLayout>

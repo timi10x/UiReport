@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0066F6"
+    tools:context=".UI.MainActivity">
+
+    <TextView
+        android:id="@+id/about_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="About"
+        android:textColor="#fff"
+        app:fontFamily="@font/baloo" />
+
+    <ImageView
+        android:id="@+id/imgBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_75sdp"
+        android:src="@drawable/badge" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBadge"
+        android:layout_centerHorizontal="true"
+        android:text="uiReport"
+        android:textColor="#fff"
+        android:textSize="@dimen/_30sdp"
+        app:fontFamily="@font/baloo" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/create_account"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="@dimen/_142sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="CREATE ACCOUNT"
+        android:textColor="#fff"
+        android:textSize="@dimen/_10sdp"
+        app:cornerRadius="@dimen/_23sdp"
+        app:strokeColor="#fff"
+        app:strokeWidth="@dimen/_1sdp" />
+
+    <TextView
+        android:id="@+id/report_anon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/report_anonymously"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/already_have_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report_anon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Already have an account?"
+        android:textColor="#fff" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_46sdp"
+        android:layout_below="@id/already_have_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:backgroundTint="#fff"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Log In"
+        android:textColor="#0066F6"
+        android:textSize="@dimen/_15sdp"
+        app:cornerRadius="@dimen/_16sdp" />
+
+</RelativeLayout>

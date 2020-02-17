@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "508734663473",
+    "firebase_url": "https://uireport.firebaseio.com",
+    "project_id": "uireport",
+    "storage_bucket": "uireport.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508734663473:android:ba9fede44865174ecb1e10",
+        "android_client_info": {
+          "package_name": "com.example.uireport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508734663473-tad4b5krl78p3auoc3e1cavre1f9jm32.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.uireport",
+            "certificate_hash": "98216286e35b784192ad8bed7e410ce40287b3b0"
+          }
+        },
+        {
+          "client_id": "508734663473-tg6t07ouskkcegejege2mkupbvd5jfl7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz1H_BJ5mSAZ4tDYp6H6RVuiB-07bLFgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508734663473-tg6t07ouskkcegejege2mkupbvd5jfl7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
