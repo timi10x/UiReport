@@ -73,6 +73,7 @@
         android:layout_height="@dimen/_65sdp"
         android:layout_below="@id/containerUsername"
         android:layout_marginLeft="@dimen/_20sdp"
+        app:startIconDrawable="@mipmap/ic_launcher"
         app:errorEnabled="true"
         app:errorIconDrawable="@drawable/ic_error_black_24dp"
         >

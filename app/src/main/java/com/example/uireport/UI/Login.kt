@@ -1,5 +1,6 @@
 package com.example.uireport.UI
 
+import android.annotation.SuppressLint
 import android.app.ProgressDialog
 import android.app.ProgressDialog.show
 import android.content.pm.ActivityInfo
@@ -21,6 +22,7 @@ class Login : AppCompatActivity() {
 
     lateinit var mAuth: FirebaseAuth
 
+    @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)

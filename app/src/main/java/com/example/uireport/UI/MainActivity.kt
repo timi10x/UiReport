@@ -1,5 +1,6 @@
 package com.example.uireport.UI
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.ActivityInfo
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var mAuth : FirebaseAuth
 
 
+    @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
